@@ -3,6 +3,7 @@
 #include <ECS/ComponentBase.hpp>
 #include <Collections/Dynarray.hpp>
 #include <UniqueID.hpp>
+#include <Memory/SafePtr.hpp>
 #include "Level.hpp"
 
 namespace SGJ

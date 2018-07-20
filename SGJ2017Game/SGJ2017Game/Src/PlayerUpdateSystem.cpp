@@ -1,5 +1,5 @@
 #include "PlayerUpdateSystem.hpp"
-#include "ECS/World.hpp"
+#include "ECS/Scene.hpp"
 #include "Input/InputWorldComponent.hpp"
 #include "PlayerControllerComponent.hpp"
 #include "Physics2D/Rigidbody2DComponent.hpp"

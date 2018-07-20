@@ -2,7 +2,7 @@
 
 namespace Poly
 {
-	class World;
+	class Scene;
 }
 
 namespace SGJ

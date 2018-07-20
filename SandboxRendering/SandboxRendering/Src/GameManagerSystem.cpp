@@ -68,7 +68,7 @@ void GameManagerSystem::CreateTextUI(Scene* scene)
 		Vector2i(50, 50),
 		"Fonts/Raleway/Raleway-Regular.ttf",
 		eResourceSource::ENGINE,
-		40.0f,
+		40,
 		"powered by PolyEngine"
 	);
 }

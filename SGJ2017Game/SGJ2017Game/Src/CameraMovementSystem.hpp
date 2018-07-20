@@ -1,6 +1,6 @@
 #pragma once
 
-namespace Poly { class World; }
+namespace Poly { class Scene; }
 
 namespace SGJ
 {

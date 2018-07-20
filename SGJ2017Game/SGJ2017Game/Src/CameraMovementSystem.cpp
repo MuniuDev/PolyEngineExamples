@@ -1,6 +1,6 @@
 #include "CameraMovementSystem.hpp"
 
-#include <ECS/World.hpp>
+#include <ECS/Scene.hpp>
 #include <Time/TimeSystem.hpp>
 #include <Rendering/Camera/CameraComponent.hpp>
 #include "Physics2D/Rigidbody2DComponent.hpp"
