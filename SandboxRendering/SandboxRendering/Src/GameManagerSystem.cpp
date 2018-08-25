@@ -70,7 +70,7 @@ void GameManagerSystem::CreateTextUI(Scene* world)
 		Vector2i(50, 50),
 		"Fonts/Raleway/Raleway-Regular.ttf",
 		eResourceSource::ENGINE,
-		40.0f,
+		40,
 		"powered by PolyEngine"
 	);
 }
@@ -685,7 +685,7 @@ ParticleComponent* GameManagerSystem::SpawnEmitterAmbient(Scene* world, Vector p
 	settings.BurstTimeMax = 2.0f;
 	settings.BurstSizeMin = 10;
 	settings.BurstSizeMax = 20;
-	settings.BaseColor = Color(1.0f, 1.0f, 1.0f, 0.5f);
+	settings.Albedo = Color(1.0f, 1.0f, 1.0f, 0.5f);
 	settings.ParticleInitFunc = [](ParticleEmitter::Particle* p) {
 		p->Position += RandomVectorRange(-1.0f, 1.0f) * 10.0f;
 		p->Velocity = RandomVectorRange(-1.0f, 1.0f) * 0.001f;
@@ -720,7 +720,7 @@ ParticleComponent* GameManagerSystem::SpawnEmitterAmbientWind(Scene* world, Vect
 	settings.BurstTimeMax = 2.0f;
 	settings.BurstSizeMin = 200;
 	settings.BurstSizeMax = 400;
-	settings.BaseColor = Color(1.0f, 1.0f, 1.0f, 0.1f);
+	settings.Albedo = Color(1.0f, 1.0f, 1.0f, 0.1f);
 	settings.ParticleInitFunc = [](ParticleEmitter::Particle* p) {
 		p->Position += Vector(-20.0f, 2.0f, 0.0f) + RandomVectorRange(-1.0f, 1.0f) * 10.0f;
 		p->Velocity = Vector(RandomRange(0.75f, 1.0f) * 0.5f, 0.0f, 0.0f);
@@ -749,7 +749,7 @@ ParticleComponent* GameManagerSystem::SpawnEmitterHeart(Scene* world, Vector pos
 
 	ParticleEmitter::Settings settings;
 	settings.MaxSize = 1000;
-	settings.BaseColor = Color(1.2f, 0.8f, 0.8f, 0.5f);
+	settings.Albedo = Color(1.2f, 0.8f, 0.8f, 0.5f);
 	settings.BurstTimeMin = 0.01f;
 	settings.BurstTimeMax = 0.05f;
 	settings.BurstSizeMin = 10;
@@ -789,7 +789,7 @@ ParticleComponent* GameManagerSystem::SpawnEmitterHeartImpact(Scene* world, Vect
 
 	ParticleEmitter::Settings settings;
 	settings.MaxSize = 1000;
-	settings.BaseColor = Color(1.5f, 1.0f, 1.0f, 0.95f);
+	settings.Albedo = Color(1.5f, 1.0f, 1.0f, 0.95f);
 	settings.BurstTimeMin = 0.1f;
 	settings.BurstTimeMax = 0.5f;
 	settings.BurstSizeMin = 10;
@@ -835,7 +835,7 @@ ParticleComponent* GameManagerSystem::SpawnEmitterHeartImpact2(Scene* world, Vec
 
 	ParticleEmitter::Settings settings;
 	settings.MaxSize = 1000;
-	settings.BaseColor = Color(2.0f, 0.5f, 0.5f, 0.2f);
+	settings.Albedo = Color(2.0f, 0.5f, 0.5f, 0.2f);
 	settings.BurstTimeMin = 1.0f;
 	settings.BurstTimeMax = 1.0f;
 	settings.BurstSizeMin = 200;
